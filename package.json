@@ -1,0 +1,43 @@
+{
+  "name": "workout-tracker-frontend",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "dependencies": {
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2",
+    "react-relay": "^1.6.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.1.2",
+    "@babel/preset-env": "^7.1.0",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.4",
+    "babel-plugin-relay": "^1.6.2",
+    "css-loader": "^1.0.0",
+    "graphql": "^14.0.2",
+    "html-webpack-plugin": "^3.2.0",
+    "relay-compiler": "^1.6.2",
+    "source-map-loader": "^0.2.4",
+    "style-loader": "^0.23.1",
+    "webpack": "^4.21.0",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.9"
+  },
+  "scripts": {
+    "start": "webpack-dev-server --hotOnly",
+    "prestart": "rm -rf dist",
+    "relay": "relay-compiler --src ./src --schema ./schema.graphql --extensions js jsx",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arflores2/workout-tracker-frontend.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/arflores2/workout-tracker-frontend/issues"
+  },
+  "homepage": "https://github.com/arflores2/workout-tracker-frontend#readme"
+}

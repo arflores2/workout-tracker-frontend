@@ -1,0 +1,14 @@
+type Query {
+  workouts: [Workout]
+}
+
+type Workout {
+  id: ID
+  name: String
+  date: String
+  blocks: [Block]
+}
+
+type Block {
+  name: String
+}
