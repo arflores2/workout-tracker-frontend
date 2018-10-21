@@ -26,6 +26,7 @@
   },
   "scripts": {
     "start": "webpack-dev-server --hotOnly",
+    "build": "webpack --config webpack.config.js",
     "prestart": "rm -rf dist",
     "relay": "relay-compiler --src ./src --schema ./schema.graphql --extensions js jsx",
     "test": "echo \"Error: no test specified\" && exit 1"

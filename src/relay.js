@@ -6,7 +6,7 @@ import {
 } from 'relay-runtime';
 
 function fetchQuery(operation, variables) {
-  return window.fetch('http://localhost:4000/graphql', {
+  return window.fetch('http://ec2-54-89-131-100.compute-1.amazonaws.com/graphql', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'
